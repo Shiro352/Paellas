@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operación Salvar las Paellas 2026</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;600&display=swap');
+
+        :root {
+            --bg-purple: #E6DFFE;
+            --card-bg: #F8F6FD;
+            --text-dark: #2A1F4D;
+            --accent-yellow: #FFE140;
+        }
+
+        body {
+            background-color: var(--bg-purple);
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .app-container {
+            background-color: var(--card-bg);
+            border-radius: 24px;
+            padding: 30px 20px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 10px 30px rgba(42, 31, 77, 0.15);
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .highlight-title {
+            color: var(--accent-yellow);
+            -webkit-text-stroke: 1.5px var(--text-dark);
+            font-size: 1.2em;
+            display: block;
+            margin-top: 10px;
+            transform: rotate(-3deg);
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .page {
+            display: none;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        button {
+            background-color: var(--text-dark);
+            color: var(--accent-yellow);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em;
+            font-weight: 700;
+            border: none;
+            border-radius: 12px;
+            padding: 15px 20px;
+            width: 100%;
+            cursor: pointer;
+            box-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+
+        button:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+
+    <div id="page-0" class="page active">
+        <h1>Operación<br>Salvar las<span class="highlight-title">PAELLAS 2026</span></h1>
+        <p>Documento Confidencial - EPSA.</p>
+        <p>Un intruso llamado Joze Pazcual ha entrado a la universidad y está intentando sabotear las paellas de la universidad, necesitamos que alguien lo arregle urgentemente, por ello, tenemos que ir a las zonas comprometidas a arreglar el problema y conseguir mantener nuestras paellas. Buscad cerca del logo de la plaza , sabreis a donde ir</p>
+        <button onclick="nextPage(1)">Comenzar Misión</button>
+    </div>
+
+    <div id="page-1" class="page">
+        <h2>1. Plano del Ferrandiz</h2>
+        <p>Tiene una ruta marcada con flechas (Norte, Sur, Este, Oeste). Parece que hay unas indicaciones, 100 pasos al Norte, 10 al sur, 15 al este y un parquecito a la vista. ¿En qué piso de Ferrandiz estas esa es tu contraseña?. Exactamente donde estas, mirando al parquecito tenemos nuestra siguiente pista.</p>
+        <button onclick="nextPage(2)">Siguiente Pista</button>
+    </div>
+
+    <div id="page-2" class="page">
+        <h2>2. El Wi-Fi de Eduroam</h2>
+        <p>Parece que Eduroam no ha podido ser hackeado. En el campo de contraseña hay un código extraño: 22-17-23 x=24. En la puerta del gimnasio hay otra pantalla, a ver si esa nos puede dar otra pista despues de arreglar esta.</p>
+        <button onclick="nextPage(3)">Siguiente Pista</button>
+    </div>
+
+    <div id="page-3" class="page">
+        <h2>3. Lab. de Química</h2>
+        <p>Una tabla periódica gigante, pero solo destacan tres elementos: Uranio (U), Fósforo (P) y Vanadio (V). Abajo dice: La suma de nuestro peso atómico (o número atómico) es la clave de acceso al laboratorio, donde aparezcan esas letras tendreis vuestra siguiente pista.</p>
+        <button onclick="nextPage(4)">Siguiente Pista</button>
+    </div>
+
+    <div id="page-4" class="page">
+        <h2>4. Agujero de las pelotas</h2>
+        <p>El intruso ha usado el agujero negro de las pelotas de padel y enemigo aferrimo de los gym bros que no saben controlar su fuerza jugando al padel para esconder el código.</p>
+        <button onclick="nextPage(5)">Siguiente Pista</button>
+    </div>
+
+    <div id="page-5" class="page">
+        <h2>5. Mensaje en el parking</h2>
+        <p>Nuestros miembros de delegacion han visto a Jozé escapar y han podido vislumbrar un poco del codigo, nos lo han dejado en una zona segura del parking, cada grupo tiene un mensaje con un trozo del codigo, seguid vuestro color y que la calabaza os acompañe.</p>
+        <button onclick="nextPage(6)">Siguiente Pista</button>
+    </div>
+
+    <div id="page-6" class="page">
+        <h2>6. Residuos Tóxicos</h2>
+        <p>El intruso borró la memoria de su USB y lo tiró donde nadie lo buscaría: en el tubo transparente de reciclaje de pilas y baterías en la plaza. Su forma cilíndrica le sirvió de camuflaje".</p>
+        <button onclick="nextPage(7)">Siguiente Pista</button>
+    </div>
+
+    <div id="page-7" class="page">
+        <h2>7. El Descanso del Hacker</h2>
+        <p>Tras lanzar el ataque al servidor, el intruso se sentó a observar el pánico desde uno de los bancos de piedra al lado de ferrandiz. Dejó su firma donde nadie se sienta".</p>
+        <button onclick="nextPage(8)">Siguiente Pista</button>
+    </div>
+
+    <div id="page-8" class="page">
+        <h2>8. Ayuda de la delegación</h2>
+        <p>Tras el ataque nuestra, queridisima delegacion de estudiantes nos ha dejado un mensaje en la calum, no podemos entrar, pero sabemos que el mensaje esta por ahi, buscalo y apuntalo.</p>
+        <button onclick="nextPage(9)">Siguiente Pista</button>
+    </div>
+
+    <div id="page-9" class="page">
+        <h2>9. Échale una foto</h2>
+        <p> Nos acaba de llegar una foto del hacker riendose de nosotros, es la siguiente imagen, id al sitio en el que coincida exactamente, cuando esteis mirad a vuestro alrededor a ver si encontramos alguna pista.</p>
+        <button onclick="nextPage(10)">Siguiente Pista</button>
+    </div>
+
+    <div id="page-10" class="page">
+        <h2>10. El Tren Valencia-Alcoi</h2>
+        <p>Joze ha escapado en tren, la ultima vez que se lo ha visto ha sido saliendo. Dice: El tren salió a las 14:15. El viaje dura 2h y 10 minutos. Hubo un retraso de 15 minutos en Xàtiva. ¿A qué hora exacta marcaba el reloj de la estación al llegar a la EPSA?.</p>
+        <button onclick="nextPage(11)">Siguiente Pista</button>
+    </div>
+
+    <div id="page-11" class="page">
+        <h2>11. El camino</h2>
+        <p>Con todo lo reunido, podeis obtener la contraseña final, teneis todo lo que os hace falta en las manos.</p>
+        <button onclick="nextPage(12)">Siguiente Pista</button>
+    </div>
+
+    <div id="page-12" class="page">
+        <h2>12. La busqueda Final</h2>
+        <p>Solo te queda buscar a nuestros contactos, ellos os diran si vuestra contraseña y vuestro viaje ha sido el bueno, esperemos que hayais sido los primeros.</p>
+        <h3 class="highlight-title">¡Mucha suerte!</h3>
+    </div>
+
+</div>
+
+<script>
+    function nextPage(pageNum) {
+        document.querySelectorAll('.page').forEach(page => {
+            page.classList.remove('active');
+        });
+        document.getElementById('page-' + pageNum).classList.add('active');
+    }
+
+    // NUEVO: Esto lee la URL al cargar la página para ver si viene de un QR
+    window.onload = function() {
+        const parametros = new URLSearchParams(window.location.search);
+        const numeroPrueba = parametros.get('prueba');
+        
+        // Si hay un número de prueba en la URL, salta directamente a ella
+        if (numeroPrueba) {
+            nextPage(numeroPrueba);
+        }
+    };
+</script>
+
+</body>
+</html>
